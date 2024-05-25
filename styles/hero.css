@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+
+
+.lemon-font {
+    font-family: 'Lemon', cursive;
+}
+
+#hero{
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  padding-bottom: 0; 
+}
+
+
+/* .wave {
+  width: 1580px;
+  height: 600px;
+  position: absolute;
+  top: 22%;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 15%;
+  background: linear-gradient(rgb(128, 197, 243), rgb(186, 237, 255));
+  box-shadow: 0 2px 4px rgba(72, 209, 250, 0.5);
+  z-index: -1;
+} */
+
+#hero::before {
+  content: "";
+  width: 1580px;
+  height: 600px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15%;
+  background: linear-gradient(rgb(128, 197, 243), rgb(186, 237, 255));
+  box-shadow: 0 2px 4px rgba(72, 209, 250, 0.5);
+  z-index: -1;
+  margin-bottom: 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    padding-bottom: 0;
+}
+
+
+
+.banner-img img{
+    width: 650px;
+    height: 550px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 0;
+    animation: pulse 5s infinite;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.text h1{
+    position: relative;
+    font-size: 50px;
+    font-family: Nunito, sans-serif;
+    margin-top: 0;
+}
+
+.tech{
+    color: #040472d7;
+}
+
+.link{
+    color: #12aa07dd;
+    font-family: cursive;
+}
+
+
+.text p{
+    color: #068b23d7;
+    font-family: Nunito, sans-serif;
+    margin-top: 0;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+.dots-wrapper {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure dots appear in front of the wavy header */
+}
+
+.dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.385);
+  position: absolute;
+  animation: float 3s infinite ease-in-out;
+}
+
+.dots:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.dots:nth-child(2) {
+  top: 60%;
+  left: 40%;
+  animation-delay: 1s;
+}
+
+.dots:nth-child(3) {
+  top: 40%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.dots:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.dots:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation-delay: 2.5s;
+}
+
+.dots:nth-child(6) {
+  top: 30%;
+  left: 45%;
+  animation-delay: 3s;
+}
+
+.dots:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation-delay: 3.5s;
+}
+
+.dots:nth-child(8) {
+  top: 75%;
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.dots:nth-child(9) {
+  top: 50%;
+  left: 43%;
+  animation-delay: 4.5s;
+}
+
+.dots:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation-delay: 5s;
+}
+
+.dots:nth-child(11) {
+  top: 10%;
+  left: 60%;
+  animation-delay: 5.5s;
+}
+
+.dots:nth-child(12) {
+  top: 20%;
+  left: 55%;
+  animation-delay: 6s;
+}
+
+.dots:nth-child(13) {
+  top: 20%;
+  left: 45%;
+  animation-delay: 2s;
+}
+
+.dots:nth-child(14) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 3.5s;
+}
+
+.dots:nth-child(15) {
+  top: 2%;
+  left: 3%;
+  animation-delay: 4s;
+}
+
+.dots:nth-child(16) {
+  top: 5%;
+  left: 15%;
+  animation-delay: 3s;
+}
+
+.dots:nth-child(17) {
+  top: 13%;
+  left: 22%;
+  animation-delay: 5s;
+}
+
+.dots:nth-child(18) {
+  top: 10%;
+  left: 53%;
+  animation-delay: 6.5s;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero::before {
+    width: 800px;
+    height: 500px;
+    top: 31px;
+  }
+
+  .banner-img img{
+    width: 400px;
+    height: 300px
+  }
+
+  .text h1{
+    font-size: 38px;
+    margin-top: 150px;
+    margin-left: 5px;
+}
+
+.text p{
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+}
+
+@media only screen and (max-width: 480px){
+  #hero::before {
+    width: 400px;
+    height: 390px;
+  }
+
+  .banner-img img{
+    width: 300px;
+    height: 200px
+   
+  }
+
+  .text h1{
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+.text p{
+  font-size: 12px;
+}
+
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.text, .banner-img {
+  width: 100%;
+  text-align: center; 
+}
+}
+
+
+
+
+
+

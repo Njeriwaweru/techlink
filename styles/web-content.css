@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+#content{
+    margin-top: 50px;
+}
+
+.content-section h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #004080;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.your{
+    color: #12aa07dd;
+    font-weight: 500;
+}
+
+
+.flex-container {
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: url(../images/services.png);
+    background-size: cover;
+}
+
+.web-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.web-img img{
+    height: 600px;
+    max-width: 100%;
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards ease-in-out, skewAnim linear 3.5s infinite 3s;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.916); /* Semi-transparent background for better text readability */
+    border-radius: 50px 0;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #101010; /* Darker color for better readability */
+    margin: 25px;
+    max-width: 600px; /* Limit the width for better readability */
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes skewAnim{
+    0%
+    {
+        transform:  skewX(2deg);
+    }
+    50%
+    {
+        transform:  skewX(-2deg);
+    }
+    100%
+    {
+        transform:  skewX(2deg);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content-section h3{
+        font-size: 25px;
+    }
+    .web-img img{
+        height: 400px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .content-section h3{
+        font-size: 18px;
+    }
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        gap: 10px;
+    }
+    .web-img img{
+        height: 300px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+}
