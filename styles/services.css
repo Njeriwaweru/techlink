@@ -192,3 +192,45 @@
     }
     
 }
+
+@media only screen and (min-width: 1900px) {
+    #services {
+        padding-top: 70px; /* Adjust padding for larger screens */
+        background-size: cover;
+    }
+    .services-section h1 {
+        font-size: 50px; /* Increased font size for larger screens */
+    }
+    .services-section {
+        padding: 70px 0; /* Adjust padding for larger screens */
+    }
+    .services-section h3 {
+        font-size: 3em; /* Increased font size for larger screens */
+        margin-bottom: 40px; /* Increased margin for better spacing */
+    }
+    .services-container {
+        max-width: 1200px; /* Increased max-width for larger screens */
+        gap: 40px; /* Increased gap between service boxes */
+    }
+    .service-box {
+        width: 600px; /* Increased width for larger screens */
+        height: 400px; /* Increased height for larger screens */
+        margin: 20px; /* Increased margin for better spacing */
+        padding: 30px; /* Increased padding for larger screens */
+    }
+    .service-icon {
+        font-size: 60px; /* Increased icon size for larger screens */
+        margin-bottom: 20px; /* Increased margin for better spacing */
+    }
+    .service-box h3 {
+        font-size: 1.5em; /* Increased font size for larger screens */
+        margin: 20px 0; /* Increased margin for better spacing */
+    }
+    .service-box p {
+        font-size: 1.2em; /* Increased font size for larger screens */
+    }
+    .service-box button {
+        padding: 8px 15px; /* Increased padding for buttons */
+        font-size: 16px; /* Increased font size for buttons */
+    }
+}
