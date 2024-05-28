@@ -6,7 +6,7 @@
 
 #about{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -15,8 +15,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
-    margin-top: 0;
-    padding-top: 0;
     box-sizing: border-box;
 }
 
@@ -124,6 +122,56 @@
     }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    #about{
+        margin-top: 30px;
+    }
+    .about-img {
+        height: 300px;
+        margin-right: 20px;
+        flex: 1 1 200px;
+        
+    }
+
+    .container-content {
+        flex: 3 1 300px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        text-align: justify;
+        margin: 0 20px;
+    }
+
+    .choose-content {
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .choose-content h3 {
+        font-size: 20px;
+    }
+
+    .choose-content p {
+        font-size: 14px;
+    }
+
+    .choose-content img {
+        height: 60px;
+    }
+
+    .choose-content .section1,
+    .choose-content .section2,
+    .choose-content .section3,
+    .choose-content .section4 {
+        flex: 1 1 45%;
+        margin: 15px;
+        padding: 3px;
+    }
+}
+
 
 @media only screen and (max-width: 768px){
 
@@ -140,9 +188,9 @@
     }
 
     .container-content {
-        margin-top: 0;
+        /* margin-top: 0;
         padding-top: 0; 
-        flex: 600px;
+        flex: 600px; */
         text-align: center;
     }
 
@@ -163,12 +211,21 @@
         margin-top: 0;
         padding-top: 0;
     }
+
+    .choose-content {
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .choose-content .section1,
     .choose-content .section2,
     .choose-content .section3,
     .choose-content .section4{
-    margin: 10px;
+        flex: 1 1 45%;
+        margin: 10px;
+        padding: 3px
     }
+    
     .choose-content h3{
     font-size: 15px;
     }
@@ -226,7 +283,8 @@
 }
 
 
-@media only screen and (min-width: 1900px) {
+
+@media only screen and (min-width: 2560px) {
     .about-img {
         height: 500px;
         margin-right: 40px;
